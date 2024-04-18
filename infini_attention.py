@@ -73,7 +73,7 @@ class InfiniAttention(nn.Module):
             max_position_embeddings=self.max_position_embeddings,
             base=self.rope_theta,
         )
-		#추가파라미터
+	#추가파라미터
         self.beta = nn.Parameter(torch.randn(1)) # memory 와 attention 결합시 사용되는 가중치 파라미터
         
         self.segment_size = 2048 #입력시퀀스 처리시 한번에 처리할 세그먼트의 크기
