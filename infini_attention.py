@@ -1,13 +1,14 @@
 
 '''
 infini-attention 함수의 구조와 설명
-repeat_kv function
+
+def repeat_kv 
 키(Key)와 값(Value) 텐서들의 차원 수를 조정하는 함수입니다. 이 함수는 어텐션 헤드 수에 맞게 키와 값 벡터들을 반복 확장하여, 어텐션 메커니즘에서 더 많은 문맥 정보를 포함시킬 수 있도록 합니다.
 
-InfiniAttention class
+class InfiniAttention
 클래스는 초기화에서 다수의 설정을 포함하며, 포워드 패스에서 입력 텐서를 처리하는 로직을 구현합니다. 여기에는 메모리 업데이트 및 검색, 로터리 임베딩 적용, 그리고 최종 어텐션 스코어 계산이 포함됩니다.
 
-RotaryEmbedding class
+class RotaryEmbedding
 회전 위치 임베딩을 계산하여, 모델이 입력 시퀀스의 위치 정보를 보다 정확하게 처리할 수 있도록 합니다.
 '''
 
